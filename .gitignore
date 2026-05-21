@@ -1,0 +1,32 @@
+# Segredos / credenciais (NUNCA versionar)
+ACESSOS_SECRETO.md
+.env
+evolution-api/.env
+*.key
+*.pem
+
+# Dependencias
+node_modules/
+
+# Evolution API e um clone de terceiros (tem .git proprio) - clonar separadamente
+evolution-api/
+
+# Logs e temporarios
+*.log
+qr.json
+qr.png
+wf-payload.json
+wf-put-resp.json
+disparo.json
+disparo-new.json
+disparo-payload.json
+
+# Config local de ferramentas (pode conter tokens/segredos)
+.claude/
+
+# Obsidian: estado de UI por usuario
+Documentacao/.obsidian/workspace.json
+
+# Sistema
+.DS_Store
+Thumbs.db

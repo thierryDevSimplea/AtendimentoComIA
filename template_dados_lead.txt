@@ -1,0 +1,79 @@
+============================================================
+TEMPLATE - DADOS CONSOLIDADOS DO LEAD
+Espelha os campos da planilha_leads.xlsx.
+Legenda de origem:  [MONDAY] [CONVERSA] [DOC=OCR] [AUTO]
+Use uma copia deste arquivo por lead (dados_consolidados.txt).
+============================================================
+
+=== IDENTIFICACAO ===
+ID Monday:                      [MONDAY]
+ID WattZap:                     [AUTO]
+Telefone:                       [MONDAY/lista]
+Tipo de Cadastro (PF/PJ):       [MONDAY]
+Status:                         [AUTO/manual]
+
+=== PLANO (MONDAY) ===
+Operadora:                      Santa Casa            [MONDAY]
+Saude/Odonto:                   Saude + Odonto        [MONDAY]
+Tipo de Plano:                  PME                   [MONDAY]
+Produto:                        Confianca 200E - Sdt com Cpart   [MONDAY]
+Boleto Adesao:                  00/00/0000            [MONDAY]
+Vigencia:                       00/00/0000            [MONDAY]
+Mensalidade:                    00/00/0000            [MONDAY]
+Valor Mensalidade:              Sem valor             [MONDAY]
+Mensalidades Seguidas:          250                   [MONDAY]
+
+=== EMPRESA (somente PJ) ===
+Razao Social:                   [CONVERSA]
+CNPJ:                           [CONVERSA]
+CEP Empresa:                    [DOC=cartao CNPJ/contrato social]
+Endereco Empresa:               [DOC]
+Numero Empresa:                 [DOC]
+Bairro Empresa:                 [DOC]
+Cidade Empresa:                 [DOC]
+Estado Empresa:                 [DOC]
+
+=== BENEFICIARIO TITULAR ===
+Nome Completo:                  [CONVERSA]
+CPF:                            [CONVERSA]
+Data de Nascimento:             [CONVERSA]
+Idade:                          [AUTO=calculado da data nasc]
+CNS:                            [AUTO=busca por CPF]
+Email:                          [CONVERSA]
+Vinculo (PJ):                   [CONVERSA]
+Cargo (PJ, nao obrigatorio):    [DOC=holerite/carteira]
+CEP:                            [DOC=comprovante residencia]
+Endereco:                       [DOC]
+Numero:                         [DOC]
+Bairro:                         [DOC]
+Cidade:                         [DOC]
+Estado:                         [DOC]
+Plano Anterior (S/N):           [CONVERSA]
+Nome do Plano Anterior:         [CONVERSA]
+Ano do Plano Anterior:          [CONVERSA]
+
+--- DOCUMENTOS DO TITULAR (PENDENTE/RECEBIDO/APROVADO) ---
+Doc com Foto:                   PENDENTE
+CPF (documento):                PENDENTE
+Comprovante de Residencia:      PENDENTE
+Carteira/Holerite:              N/A (so se vinculo empregaticio)
+
+=== DEPENDENTE 1 (repetir bloco para cada dependente) ===
+Nome Completo:                  [CONVERSA]
+CPF:                            [CONVERSA]
+Data de Nascimento:             [CONVERSA]
+Idade:                          [AUTO]
+CNS:                            [AUTO]
+Email:                          [CONVERSA]
+Vinculo:                        [CONVERSA] (empregado/colaborador/funcionario/parente/familiar)
+CEP:                            [DOC]
+Endereco / Numero / Bairro / Cidade / Estado:   [DOC]
+
+--- DOCUMENTOS DO DEPENDENTE 1 ---
+Doc com Foto:                   PENDENTE
+Comprovante de Residencia:      PENDENTE
+Carteira/Holerite:              PENDENTE (so se vinculo empregaticio; familiar nao precisa)
+
+============================================================
+PENDENCIAS / OBSERVACOES:
+============================================================
