@@ -18,6 +18,7 @@ Vault de documentação do **WattZap**: sistema de captação e processamento de
 - [[10 - Estrutura do Projeto (arquivos)]] — mapa de todos os arquivos/scripts
 - [[11 - Roadmap e Pendências]] — o que está pronto e o que falta finalizar
 - [[12 - Acessos e Credenciais]] — mapa de acessos (segredos em arquivo local não-versionado)
+- [[13 - Testes e Correções]] — log dos testes do fluxo e correções
 - [[06 - Changelog]] — histórico de versões e mudanças
 
 ## Referências externas

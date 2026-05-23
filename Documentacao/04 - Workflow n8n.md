@@ -10,8 +10,10 @@
 
 1. **Webhook** (`wattzap-incoming`) — recebe `messages.upsert` da Evolution API
 2. **filtro-parse** (Code) — ignora fromMe/grupos/broadcast/mensagens antigas (>60s); casa o número no `leadsDB`; extrai texto/mídia; anexa `leadNome/leadTipo/leadDependentes`
-3. **chamar-ia** (Code) — monta system prompt (fluxo PJ/PF, plano anterior, docs, vínculo dependentes) e chama o proxy via `TUNNEL_URL` no **formato OpenAI/Groq**, lê `choices[0].message.content`
-4. **enviar** (HTTP) — `POST /message/sendText/wattzap` na Evolution API
+3. **Debounce** (Code) — espera 7s e aborta se chegou mensagem mais nova do cliente (evita race de execuções paralelas). Ver [[13 - Testes e Correções]]
+4. **buscar-historico** (Code) — busca as últimas **50** mensagens da conversa na Evolution API
+5. **chamar-ia** (Code) — monta system prompt (fluxo PJ/PF, plano anterior, docs, vínculo dependentes, regras anti-regressão) e chama o proxy via `TUNNEL_URL` no **formato OpenAI/Groq**, lê `choices[0].message.content`
+6. **enviar** (HTTP) — `POST /message/sendText/wattzap` na Evolution API
 
 ## leadsDB (hardcoded, teste)
 

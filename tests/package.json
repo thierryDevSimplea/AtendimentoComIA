@@ -1,0 +1,17 @@
+{
+  "name": "proxy-ai-tests",
+  "version": "1.0.0",
+  "description": "Test runner for proxy-ai.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Test tester",
+  "license": "MIT",
+  "dependencies": {
+    "test": "^1.0.0"
+  }
+}
