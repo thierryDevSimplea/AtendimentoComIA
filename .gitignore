@@ -20,12 +20,15 @@ wf-put-resp.json
 disparo.json
 disparo-new.json
 disparo-payload.json
+hist_test.json
 
 # Config local de ferramentas (pode conter tokens/segredos)
 .claude/
 
 # Obsidian: estado de UI por usuario
 Documentacao/.obsidian/workspace.json
+# Obsidian aberto por engano na raiz (vault correto e Documentacao/)
+/.obsidian/
 
 # Sistema
 .DS_Store
