@@ -27,7 +27,7 @@ No `proxy-ai.js`, trocar:
 - `DEFAULT_MODEL` → ex. `gpt-4o-mini`
 - env var → `OPENAI_API_KEY`
 
-O nó do n8n não muda (já está no formato OpenAI). Ver [[04 - Workflow n8n]].
+O nó do n8n não muda (já está no formato OpenAI). Ver [Workflow n8n](workflow-n8n.md).
 
 ## Formato da chamada (compatível OpenAI)
 

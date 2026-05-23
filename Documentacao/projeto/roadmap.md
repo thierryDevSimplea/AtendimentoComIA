@@ -2,17 +2,17 @@
 
 Estado do projeto e o que falta pra finalizar. Atualizado: **2026-05-21**.
 
-## ✅ Pronto
+## Pronto
 
-- Ambiente nativo (Postgres 16 + Evolution API via `npm start`) — ver [[01 - Arquitetura]]
-- IA migrada pro Groq (gratuito), proxy funcionando — [[03 - Agente IA (Groq)]]
+- Ambiente nativo (Postgres 16 + Evolution API via `npm start`) — ver [Arquitetura](../setup/arquitetura.md)
+- IA migrada pro Groq (gratuito), proxy funcionando — [Agente IA (Groq)](../servicos/agente-ia.md)
 - WhatsApp conectado (instância `wattzap`, número 5521994746793)
 - Workflow do agente (v4) e do disparo (Kaizen) publicados e ativos no n8n
 - Tunnels Cloudflare ligados (Evolution + proxy)
-- Fluxo PF/PJ revisado e documentado — [[08 - Fluxo do Agente (PF e PJ)]]
-- Planilha + arquivo de lead estruturados — [[09 - Planilha de Leads]]
+- Fluxo PF/PJ revisado e documentado — [Fluxo do Agente](../negocio/fluxo-agente.md)
+- Planilha + arquivo de lead estruturados — [Planilha de Leads](../negocio/planilha-leads.md)
 
-## ⏳ Pendente (ordem sugerida)
+## Pendente (ordem sugerida)
 
 1. **Teste end-to-end** — disparar 1ª mensagem (Thierry PF ou Gabriel PJ), responder e validar a conversa completa até o fechamento.
 2. **Gravar dados do lead** — ao fim da conversa, escrever o `dados_consolidados.txt` e/ou linha na `planilha_leads.xlsx` (hoje a planilha não é preenchida automaticamente pelo fluxo).
@@ -22,11 +22,11 @@ Estado do projeto e o que falta pra finalizar. Atualizado: **2026-05-21**.
    - preencher endereço da empresa (PJ)
    - validar/marcar status dos documentos (PENDENTE/RECEBIDO/APROVADO)
    - extrair Cargo (do holerite/carteira)
-5. **Integração Monday** — webhook do Monday (status "Aprovado") cria o lead em `leads.json`/fila e dispara o 1º contato; preenche o bloco `monday` por lead. Ver [[07 - Pipeline de Leads (Monday)]].
-6. **Migrar IA pra OpenAI** (produção) — trocar URL+chave no `proxy-ai.js`. Ver [[03 - Agente IA (Groq)]].
+5. **Integração Monday** — webhook do Monday (status "Aprovado") cria o lead em `leads.json`/fila e dispara o 1º contato; preenche o bloco `monday` por lead. Ver [Pipeline de Leads](../negocio/pipeline-leads.md).
+6. **Migrar IA pra OpenAI** (produção) — trocar URL+chave no `proxy-ai.js`. Ver [Agente IA (Groq)](../servicos/agente-ia.md).
 7. **Publicar no GitHub** — versionar o projeto (usar PAT, não senha).
 
-## ⚠️ Riscos / atenções
+## Riscos / atenções
 
 - **Tunnels efêmeros**: as URLs `trycloudflare.com` mudam a cada reinício. Ao reiniciar, regenerar e atualizar nos dois workflows (`update_workflow.py` e `update_disparo.py`).
 - **Chave Groq exposta no chat** — revogar e gerar nova antes de produção.

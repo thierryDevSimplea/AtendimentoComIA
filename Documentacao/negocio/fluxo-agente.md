@@ -3,9 +3,9 @@
 > [!note] Documento vivo
 > Este é o fluxo **atual** de conversa do agente. Vai mudar com o tempo — manter sempre atualizado aqui a cada ajuste. Última atualização: **2026-05-21**.
 
-Implementado no nó `chamar-ia` do workflow `WattZap - Agente Kaizen v4` (ver [[04 - Workflow n8n]]). Marca: **Kaizen Consultoria**. Tom: formal e direto, **uma pergunta por vez**, resume os dados coletados a cada resposta.
+Implementado no nó `chamar-ia` do workflow `WattZap - Agente Kaizen v4` (ver [Workflow n8n](../servicos/workflow-n8n.md)). Marca: **Kaizen Consultoria**. Tom: formal e direto, **uma pergunta por vez**, resume os dados coletados a cada resposta.
 
-> Quem **inicia** a conversa é sempre o disparo n8n (ver [[07 - Pipeline de Leads (Monday)]]). O agente assume quando o cliente responde.
+> Quem **inicia** a conversa é sempre o disparo n8n (ver [Pipeline de Leads](pipeline-leads.md)). O agente assume quando o cliente responde.
 
 ---
 
