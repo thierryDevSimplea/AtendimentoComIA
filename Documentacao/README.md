@@ -37,6 +37,7 @@ Sistema de captação e processamento de leads para planos de saúde PME/PJ via 
 |-----|-------------|
 | [Estrutura de Arquivos](projeto/estrutura-arquivos.md) | Mapa de todos os arquivos e scripts |
 | [Roadmap e Pendências](projeto/roadmap.md) | O que está pronto e o que falta finalizar |
+| [Testes e Correções](projeto/testes-correcoes.md) | Registro de testes end-to-end e correções aplicadas |
 | [Changelog](projeto/changelog.md) | Histórico de versões e mudanças |
 
 ## Referências externas
