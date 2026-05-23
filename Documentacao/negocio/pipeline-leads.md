@@ -53,14 +53,14 @@ Cada lead em `leads.json` carrega um bloco `monday` com os campos de plano. **Ho
 - Mensalidades Seguidas: 250
 - Boleto Adesão / Vigência / Mensalidade: (datas, vazias até virem do Monday)
 
-Esses campos alimentam o grupo PLANO (MONDAY) da planilha e o arquivo do lead. Ver [[09 - Planilha de Leads]].
+Esses campos alimentam o grupo PLANO (MONDAY) da planilha e o arquivo do lead. Ver [Planilha de Leads](planilha-leads.md).
 
 > [!todo] Futuro: webhook do Monday (status = "Aprovado") dispara o primeiro contato automaticamente e preenche esses campos por lead. Ver PRD seção 13.11.
 
 ## Workflows n8n envolvidos
 
 - **Disparo:** `WattZap - Disparo Leads (Kaizen)` (id `EhCYZjF26O0hZSIi`) — webhook `wattzap-disparo`. Lê a lista, monta a 1ª mensagem por tipo (PF/PJ) e envia. Marca: **Kaizen Consultoria**.
-- **Agente:** `WattZap - Agente Kaizen v4` (id `eRxPk9c1ZhjsLi05`) — webhook `wattzap-incoming`. Reativo, conduz a conversa. Ver [[04 - Workflow n8n]].
+- **Agente:** `WattZap - Agente Kaizen v4` (id `eRxPk9c1ZhjsLi05`) — webhook `wattzap-incoming`. Reativo, conduz a conversa. Ver [Workflow n8n](../servicos/workflow-n8n.md).
 
 ## 1ª mensagem do disparo (alinhada ao fluxo)
 
@@ -68,4 +68,4 @@ Saudação + pedir **nome completo** (uma pergunta por vez). Ex. (PF):
 
 > Olá Thierry. Aqui é da Kaizen Consultoria, consultoria em planos de saúde. Para dar andamento à sua cotação, pode me confirmar seu nome completo?
 
-A partir da resposta, o agente v4 assume. Ver fluxo em [[04 - Workflow n8n]].
+A partir da resposta, o agente v4 assume. Ver fluxo em [Workflow n8n](../servicos/workflow-n8n.md).

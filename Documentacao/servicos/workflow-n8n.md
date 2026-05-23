@@ -15,12 +15,12 @@
 
 ## leadsDB (hardcoded, teste)
 
-| Número        | Nome             | Tipo | Deps |
-| ------------- | ---------------- | ---- | ---- |
-| 5516991420538 | Gilson Ferreira  | PF   | 1    |
-| 5518998171940 | Gabriel Henrique | PJ   | 2    |
-| 5516997868188 | Affonso          | PF   | 0    |
-| 5521971059196 | Thierry          | PF   | 0    |
+| Número | Nome | Tipo | Deps |
+|--------|------|------|------|
+| 5516991420538 | Gilson Ferreira | PF | 1 |
+| 5518998171940 | Gabriel Henrique | PJ | 2 |
+| 5516997868188 | Affonso | PF | 0 |
+| 5521971059196 | Thierry | PF | 0 |
 
 > [!note] O número real conectado agora é **5521994746793**. Se for testar com ele, adicionar ao `leadsDB`.
 
@@ -30,4 +30,4 @@
 2. `python C:/Atendimento2/update_workflow.py`
 3. Reimportar o JSON no n8n e ativar
 
-Ver [[03 - Agente IA (Groq)]] para o formato da chamada.
+Ver [Agente IA (Groq)](agente-ia.md) para o formato da chamada.

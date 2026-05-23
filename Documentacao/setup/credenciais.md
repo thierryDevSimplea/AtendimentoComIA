@@ -6,7 +6,7 @@
 ## Mapa de acessos
 
 | Sistema | Onde / usuário | Segredo |
-|---|---|---|
+|---------|---------------|---------|
 | Evolution API | `http://localhost:8080` + painel `/manager` | API key `evo_wattzap_2026` → `ACESSOS_SECRETO.md` |
 | PostgreSQL | serviço `postgresql-x64-16`, banco `evolution` | usuário/senha `postgres`/`postgres` → `ACESSOS_SECRETO.md` |
 | Groq (IA) | console.groq.com | API key `gsk_...` → `ACESSOS_SECRETO.md` (env `GROQ_API_KEY`) |
@@ -15,7 +15,7 @@
 | Monday (futuro) | CRM, origem dos leads | sem credenciais ainda |
 | WhatsApp | instância `wattzap`, número `5521994746793` | via Evolution API |
 
-## Boas práticas (arquiteto)
+## Boas práticas
 
 - **Nunca commitar segredos.** O `.gitignore` já protege `ACESSOS_SECRETO.md`, `.env`, `*.log` e temporários.
 - A **chave do Groq** apareceu no chat → revogar e gerar nova antes de produção.
@@ -23,4 +23,4 @@
 - Em produção, mover segredos para **variáveis de ambiente** / cofre, não arquivos.
 - Tunnels Cloudflare são **efêmeros** — não são "acesso fixo"; regenerar e atualizar nos workflows quando reiniciar.
 
-Ver também [[10 - Estrutura do Projeto (arquivos)]] e [[02 - Como Subir o Ambiente]].
+Ver também [Estrutura de Arquivos](../projeto/estrutura-arquivos.md) e [Como Subir o Ambiente](ambiente.md).

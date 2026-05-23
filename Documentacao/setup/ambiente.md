@@ -33,7 +33,7 @@ node proxy-ai.js
 ```
 
 - Sobe na porta **3456**
-- Encaminha para o Groq. Ver [[03 - Agente IA (Groq)]]
+- Encaminha para o Groq. Ver [Agente IA (Groq)](../servicos/agente-ia.md)
 
 ## 4. Tunnel Cloudflare (expor proxy ao n8n)
 
@@ -42,11 +42,11 @@ node proxy-ai.js
 ```
 
 - Copiar a URL `https://*.trycloudflare.com` gerada
-- Atualizar `TUNNEL_URL` no `update_workflow.py` e reimportar o workflow no n8n. Ver [[04 - Workflow n8n]]
+- Atualizar `TUNNEL_URL` no `update_workflow.py` e reimportar o workflow no n8n. Ver [Workflow n8n](../servicos/workflow-n8n.md)
 
 ## 5. WhatsApp
 
-Reconectar a instância `wattzap`. Ver [[05 - WhatsApp e Evolution API]].
+Reconectar a instância `wattzap`. Ver [WhatsApp e Evolution API](../servicos/whatsapp.md).
 
 ## 6. Validar
 

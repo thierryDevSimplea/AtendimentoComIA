@@ -34,4 +34,4 @@ O proxy local é exposto ao n8n remoto via **tunnel Cloudflare**.
 | n8n | Servidor remoto | Já hospedado |
 | Tunnel Cloudflare | local | `cloudflared tunnel --url` |
 
-Ver [[02 - Como Subir o Ambiente]] para o passo a passo.
+Ver [Como Subir o Ambiente](ambiente.md) para o passo a passo.
