@@ -11,7 +11,7 @@
 | PostgreSQL | serviço `postgresql-x64-16`, banco `evolution` | usuário/senha `postgres`/`postgres` → `ACESSOS_SECRETO.md` |
 | Groq (IA) | console.groq.com | API key `gsk_...` → `ACESSOS_SECRETO.md` (env `GROQ_API_KEY`) |
 | n8n | `https://simplea-teste.37-148-135-242.sslip.io` | JWT da API → `ACESSOS_SECRETO.md` |
-| GitHub | conta `thierryDevSimplea` / pessoal `@ThierryDev499` | senha + **PAT** → `ACESSOS_SECRETO.md` |
+| GitHub | repo `https://github.com/thierryDevSimplea/AtendimentoComIA` — conta `thierryDevSimplea` / pessoal `@ThierryDev499` | senha + **PAT** → `ACESSOS_SECRETO.md` |
 | Monday (futuro) | CRM, origem dos leads | sem credenciais ainda |
 | WhatsApp | instância `wattzap`, número `5521994746793` | via Evolution API |
 
